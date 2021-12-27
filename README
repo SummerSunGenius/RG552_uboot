@@ -5298,3 +5298,13 @@ Notes:
   u-boot mailing list. Bigger patches will be moderated. If they are
   reasonable and not too big, they will be acknowledged. But patches
   bigger than the size limit should be avoided.
+
+
+build:
+https://github.com/rockchip-linux/rkbin
+
+./make.sh evb-rk3399
+
+sudo dd if=idbloader.img of=/dev/sdb conv=fsync bs=512 seek=64
+sudo dd if=uboot.img of=/dev/sdb conv=fsync bs=512 seek=16384
+sudo dd if=trust.img of=/dev/sdb conv=fsync bs=512 seek=24576
