@@ -5301,6 +5301,7 @@ Notes:
 
 
 build:
+Put the rkbin folder in the same level directory
 https://github.com/rockchip-linux/rkbin
 
 ./make.sh evb-rk3399
